@@ -20,47 +20,45 @@
                 <li><a href="/Pages/Comment-ca-marche.html">Comment ça marche</a></li>
                 <li><a href="/Pages/Joueurs.html">Joueurs</a></li>
                 <li><a href="/Pages/Communaute.html">Communauté</a></li>
+                <li><a href="/Pages/publier-annonce.html" class="active">Publier une annonce</a></li>
                 <li><a id="btn1" href="/Pages/Connexion.html">Connexion</a></li>
             </ul>
         </nav>
     </header>
+    <section class="annonce">
+        <div class="container-annonce">
+            <form class="form-annonce">
+                <h2>Publie ton annonce</h2>
+
+                <label for="team">Nom de l’équipe :</label>
+                <input type="text" id="team" name="team" placeholder="Ex: Les Titans du Nord" required>
+
+                <label for="game">Jeu :</label>
+                <select id="game" name="game" required>
+                    <option value="">-- Choisir un jeu --</option>
+                    <option>Valorant</option>
+                    <option>League of Legends</option>
+                    <option>CS2</option>
+                </select>
+
+                <label for="niveau">Niveau recherché :</label>
+                <input type="text" id="niveau" name="niveau" placeholder="Ex: Platine, Or..." required>
+
+                <label for="desc">Description :</label>
+                <textarea id="desc" name="desc" placeholder="Décris ton équipe, ton style de jeu..."></textarea>
+
+                <button type="submit">Publier</button>
+                <div class="back-home">
+                    <a href="/index.html">← Retour à l’accueil</a>
+                </div>
+            </form>
 
 
-    <section class="section-3">
-        <h1>Comment ça marche</h1>
-        <div class="Comment_ca_marche">
-
-            <div class="card">
-                <div class="circle">
-                    <i class="fa-solid fa-user-group"></i>
-                </div>
-                <h2>Trouve une équipe</h2>
-                <p>Parcours des centaines de profils dejoueurs et d'équipes qui cherchent des coéquipiers de ton niveau.
-                </p>
-            </div>
-            <div class="card">
-                <div class="circle">
-                    <i class="fa-solid fa-user-plus"></i>
-                </div>
-                <h2>Publie ton profil</h2>
-                <p>Crée ton profil de joueur avec tes stats,
-                    tes jeux favoris et ton niveau pour être
-                    visible par les équipes.
-                </p>
-            </div>
-            <div class="card">
-                <div class="circle">
-                    <i class="fa-solid fa-user-group"></i>
-                </div>
-                <h2>Rejoins la communauté</h2>
-                <p>Connecte-toi avec des milliers de
-                    joueurs passionnés et participe à des
-                    tournois communautaires.
-                </p>
-            </div>
         </div>
 
     </section>
+
+
 
 
 

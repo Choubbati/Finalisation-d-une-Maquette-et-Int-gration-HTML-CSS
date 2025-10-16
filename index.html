@@ -12,6 +12,7 @@
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
     <!-- pour les icons fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <link rel="stylesheet" href="style/style.css">
     <title>Accueil</title>
@@ -23,11 +24,12 @@
         <nav>
 
             <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="Pages/Comment-ca-marche.html">Comment ça marche</a></li>
-                <li><a href="Pages/Joueurs.html">Joueurs</a></li>
-                <li><a href="#">Communauté</a></li>
-                <li><a id="btn1" href="#">Connexion</a></li>
+                <li><a href="/index.html">Accueil</a></li>
+                <li><a href="#ca-marche">Comment ça marche</a></li>
+                <li><a href="#joueur">Joueurs</a></li>
+                <li><a href="#communaute">Communauté</a></li>
+                <li><a href="/Pages/publier-annonce.html" class="active">Publier une annonce</a></li>
+                <li><a id="btn1" href="/Pages/Connexion.html">Connexion</a></li>
             </ul>
         </nav>
     </header>
@@ -49,8 +51,281 @@
 
     </section>
 
-    <section class="section-3">
-        <h1>Une communication en pleine croissance</h1>
+    <section class="section-2">
+        <div class="secton-container">
+            <h1>Rechercher Ton équipe idéale</h1>
+            <div class="chercher">
+                <div class="jeu">
+                    <label for="">jeu</label>
+                    <input type="text" placeholder="Sélectionner un jeu">
+                </div>
+                <div class="jeu">
+                    <label for="">niveau</label>
+                    <input type="text" placeholder="tout les niveaux">
+                </div>
+                <div class="jeu">
+                    <label for="">Rôle</label>
+                    <input type="text" placeholder="tout les Rôles">
+                </div>
+                <div class="jeu">
+                    <button>Rechercher</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="players-section">
+        <h1>Top joueurs</h1>
+
+        <div class="search">
+            <div class="search-joueur">
+                <label for="">Search joueur</label>
+                <input type="text" name="" placeholder="Search" id="">
+                <button>Search</button>
+            </div>
+        </div>
+
+        <table class="players-table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Joueur</th>
+                    <th>Âge</th>
+                    <th>Nat.</th>
+                    <th>Points</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td class="color">1</td>
+                    <td class="player-info">
+                        <img src="icons/Adel-Taarabt-008.avif" alt="Lamine Yamal">
+                        <div>
+                            <span class="color">Tayeb Souini</span>
+
+                        </div>
+                    </td>
+                    <td class="color">30</td>
+                    <td><img src="/icons/flag-of-morocco.webp" class="flag" alt="ESP"></td>
+                    <td class="value">200,00 Pts</td>
+                </tr>
+
+                <tr>
+                    <td class="color">2</td>
+                    <td class="player-info">
+                        <img src="/icons/Metouali.jpg" alt="Jude Bellingham">
+                        <div>
+                            <span class="color">chouaib loubbati</span>
+                        </div>
+                    </td>
+                    <td class="color">30</td>
+                    <td><img src="icons/flag-of-morocco.webp" class="flag" alt="ENG"></td>
+                    <td class="value">180,00 Pts</td>
+                </tr>
+
+                <tr>
+                    <td class="color">3</td>
+                    <td class="player-info">
+                        <img src="/icons/68619106-48235539.jpg" alt="Jude Bellingham">
+                        <div>
+                            <span class="color">Stiven bold</span>
+                        </div>
+                    </td>
+                    <td class="color">21</td>
+                    <td><img src="icons/Flag_of_France.svg.png" class="flag" alt="ENG"></td>
+                    <td class="value">150,00 Pts</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </section>
+
+
+
+
+    <section id="ca-marche" class="section-3">
+        <h1>Comment ça marche</h1>
+        <div class="Comment_ca_marche">
+
+            <div class="card">
+                <div class="circle">
+                    <i class="fa-solid fa-user-group"></i>
+                </div>
+                <h2>Trouve une équipe</h2>
+                <p>Parcours des centaines de profils dejoueurs et d'équipes qui cherchent des coéquipiers de ton niveau.
+                </p>
+            </div>
+            <div class="card">
+                <div class="circle">
+                    <i class="fa-solid fa-user-plus"></i>
+                </div>
+                <h2>Publie ton profil</h2>
+                <p>Crée ton profil de joueur avec tes stats,
+                    tes jeux favoris et ton niveau pour être
+                    visible par les équipes.
+                </p>
+            </div>
+            <div class="card">
+                <div class="circle">
+                    <i class="fa-solid fa-user-group"></i>
+                </div>
+                <h2>Rejoins la communauté</h2>
+                <p>Connecte-toi avec des milliers de
+                    joueurs passionnés et participe à des
+                    tournois communautaires.
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="joueur" class="section-3">
+        <h1>Joueurs disponibles</h1>
+        <div class="cards">
+            <div class="card-joueur">
+                <div class="img">
+                    <img src="/icons/3527523_cristiano_ronaldo_20240528093324.jpg" alt="">
+                    <div class="enligne"></div>
+                </div>
+                <div class="username_joueur">
+                    <h2>xFawzer</h2>
+                </div>
+                <div class="status">
+                    <p>Valorant</p>
+                </div>
+                <div class="type">
+                    <p>Controller <span>Diament II</span></p>
+                </div>
+                <div class="disc">
+                    <p>Main Clove/Omen, cherche équipe compétitive pour ranked push.</p>
+                </div>
+                <div class="btn-voir-profil">
+                    <a href="/Pages/Profil.html">Voir Profil</a>
+                </div>
+            </div>
+
+            <div class="card-joueur">
+                <div class="img">
+                    <img src="/icons/0x0.webp" alt="">
+                    <div class="enligne"></div>
+                </div>
+                <div class="username_joueur">
+                    <h2>PhoenixRising</h2>
+                </div>
+                <div class="status" id="background-joueur-1">
+                    <p>League of Legends</p>
+                </div>
+                <div class="type">
+                    <p>Controller <span>Diament II</span></p>
+                </div>
+                <div class="disc">
+                    <p>Main Clove/Omen, cherche équipe compétitive pour ranked push.</p>
+                </div>
+                <div class="btn-voir-profil">
+                    <a href="/Pages/Profil.html">Voir Profil</a>
+                </div>
+            </div>
+
+            <div class="card-joueur">
+                <div class="img">
+                    <img src="/icons/68619106-48235539.jpg" alt="">
+                    <div class="enligne"></div>
+                </div>
+                <div class="username_joueur">
+                    <h2>IceQueen</h2>
+                </div>
+                <div class="status" id="CS2">
+                    <p>CS2</p>
+                </div>
+                <div class="type">
+                    <p>Controller <span>Diament II</span></p>
+                </div>
+                <div class="disc">
+                    <p>Main Clove/Omen, cherche équipe compétitive pour ranked push.</p>
+                </div>
+                <div class="btn-voir-profil">
+                    <a href="/Pages/Profil.html">Voir Profil</a>
+                </div>
+            </div>
+
+            <div class="card-joueur">
+                <div class="img">
+                    <img src="/icons/images.jpg" alt="">
+                    <div class="enligne"></div>
+                </div>
+                <div class="username_joueur">
+                    <h2>NeonBlade</h2>
+                </div>
+                <div class="status">
+                    <p>Valorant</p>
+                </div>
+                <div class="type">
+                    <p>Controller <span>Diament II</span></p>
+                </div>
+                <div class="disc">
+                    <p>Main Clove/Omen, cherche équipe compétitive pour ranked push.</p>
+                </div>
+                <div class="btn-voir-profil">
+                    <a href="/Pages/Profil.html">Voir Profil</a>
+                </div>
+            </div>
+
+            <div class="card-joueur">
+                <div class="img">
+                    <img src="/icons/Adel-Taarabt-008.avif" alt="">
+                    <div class="enligne"></div>
+                </div>
+                <div class="username_joueur">
+                    <h2>ThunderGod</h2>
+                </div>
+                <div class="status" id="background-joueur-1">
+                    <p>League of Legends</p>
+                </div>
+                <div class="type">
+                    <p>Controller <span>Diament II</span></p>
+                </div>
+                <div class="disc">
+                    <p>Main Clove/Omen, cherche équipe compétitive pour ranked push.</p>
+                </div>
+                <div class="btn-voir-profil">
+                    <a href="/Pages/Profil.html">Voir Profil</a>
+                </div>
+
+            </div>
+
+            <div class="card-joueur">
+                <div class="img">
+                    <img src="/icons/Metouali.jpg" alt="">
+                    <div class="enligne"></div>
+                </div>
+                <div class="username_joueur">
+                    <h2>CyberNinja</h2>
+                </div>
+                <div id="CS2" class="status">
+                    <p>CS2</p>
+                </div>
+                <div class="type">
+                    <p>Controller <span>Diament II</span></p>
+                </div>
+                <div class="disc">
+                    <p>Main Clove/Omen, cherche équipe compétitive pour ranked push.</p>
+                </div>
+
+                <div class="btn-voir-profil">
+                    <a href="/Pages/Profil.html">Voir Profil</a>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <section id="communaute" class="section-3">
+        <h1>Une communauté en pleine croissance</h1>
         <div class="card-number">
             <div class="number">
                 <h2>15,000+</h2>
@@ -104,6 +379,8 @@
             </div>
         </div>
     </section>
+
+
     <footer>
         <div class="cont-footer">
             <div class="card-footer">
